@@ -49,7 +49,7 @@ The default comm port is `/dev/ttyUSB0`, you can use a different com port by add
 
 Flash to ESP8285, 1MB, 512+512 map, in dout mode:
 ```
-./flash.sh -t 1MB -m DOUT
+./flash.sh -t 1MB -m dout
 ```
 Flash to ESP8266, 1MB, 512+512 map, in qio mode:
 ```
@@ -91,7 +91,7 @@ Note: Be careful that your _USBtoSerial_ adapter is labeled correctly. Some are 
 5. Power off the board (disconnect USB cable from the board's USB-C connector)
 6. Connect the **ESP8285 boot** pin to the ground before powering the the board, after power on, the pin can be released
 7. Power on the board (connect USB cable to the board's USB-C connector)
-8. Execute `./flash.sh -t 1MB -m dout` to flash the new firmware
+8. Execute `./flash.sh -t 1MB -m dout -ne` to flash the new firmware
 9. Power off the board
 
 
